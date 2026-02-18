@@ -22,6 +22,11 @@ apt update
 echo "⚙ Installing zsh, git, curl..."
 apt install -y zsh git curl
 
+echo "📦 Package versions:"
+zsh --version
+git --version
+curl --version
+
 echo "🐚 Installing Oh My Zsh..."
 if [ ! -d "$USER_HOME/.oh-my-zsh" ]; then
   sudo -u "$TARGET_USER" RUNZSH=no CHSH=no sh -c \
@@ -48,4 +53,15 @@ echo ""
 echo "✅ Installation complete!"
 echo "User '$TARGET_USER' can now run:"
 echo "  exec zsh"
+echo "Or log in again with the same username, '$TARGET_USER'"
+echo ""
+echo "Run p10k setup? (y: yes):"
 
+read OPTION
+if [ "$OPTION" = "y" ]
+then
+  source ~/.p10k.zsh 2>/dev/null || true
+  exec zsh -i -c 'p10k configure'
+else
+  exit 0
+fi
