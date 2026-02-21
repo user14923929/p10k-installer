@@ -2,10 +2,15 @@
 
 set -e
 
+tfu() {
+  echo "Thanks for using :)"
+}
+
 echo "🔐 Checking root privileges..."
 if [ "$EUID" -ne 0 ]; then
   echo "This script must be run as root."
   echo "Use: sudo ./main.sh"
+  tfu
   exit 1
 fi
 
@@ -65,3 +70,5 @@ then
 else
   exit 0
 fi
+
+tfu
