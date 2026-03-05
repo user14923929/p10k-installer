@@ -62,4 +62,4 @@ Enjoy your upgraded terminal 🚀
 
 ## License
 
-MIT License - <a href="https://github.com/user14923929/p10k-installer/blob/master/LICENSE">See</a> LICENSE file for details
+MIT License - <a href="https://github.com/user14923929/p10k-installer/blob/termux-standlone/LICENSE">See</a> LICENSE file for details

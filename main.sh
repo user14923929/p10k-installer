@@ -43,7 +43,7 @@ pkg upgrade -y
 
 # Install dependencies
 step "Installing dependencies"
-pkg install -y zsh git curl wget
+pkg install -y zsh git
 
 # Install Oh My Zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
