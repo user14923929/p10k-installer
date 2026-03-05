@@ -43,7 +43,7 @@ On first launch, the Powerlevel10k configuration wizard will appear.
 ## What the Script Does
 
 1.  Updates package lists
-2.  Installs `zsh`, `git`, and `curl`
+2.  Installs `zsh` and `git`
 3.  Installs Oh My Zsh
 4.  Clones Powerlevel10k theme
 5.  Sets Powerlevel10k as the default theme
