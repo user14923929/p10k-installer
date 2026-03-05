@@ -14,32 +14,8 @@ It automatically installs everything for the user who invoked sudo.
 
 ## Installation
 
-### 1. Download the script
-
 ``` bash
-wget https://raw.githubusercontent.com/user14923929/p10k-installer/refs/heads/master/main.sh
-```
-
-Or copy the script manually into a file:
-
-``` bash
-nano main.sh
-```
-
-------------------------------------------------------------------------
-
-### 2. Make it executable
-
-``` bash
-chmod +x main.sh
-```
-
-------------------------------------------------------------------------
-
-### 3. Run as root
-
-``` bash
-sudo ./main.sh
+sudo curl -fsSL https://raw.githubusercontent.com/user14923929/p10k-installer/refs/heads/master/main.sh | bash
 ```
 
 ------------------------------------------------------------------------
