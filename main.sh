@@ -24,7 +24,7 @@ echo "🏠 Home directory: $USER_HOME"
 echo "📦 Updating packages..."
 apt update
 
-echo "⚙ Installing zsh, git, curl..."
+echo "⚙ Installing zsh, git"
 apt install -y zsh git curl
 
 echo "📦 Package versions:"
