@@ -15,7 +15,7 @@ It automatically installs everything for the user who invoked sudo.
 ## Installation
 
 ``` bash
-sudo curl -fsSL https://raw.githubusercontent.com/user14923929/p10k-installer/refs/heads/master/main.sh | bash
+curl -fsSL https://raw.githubusercontent.com/user14923929/p10k-installer/refs/heads/master/main.sh | sudo bash
 ```
 
 ------------------------------------------------------------------------

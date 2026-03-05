@@ -9,7 +9,7 @@ tfu() {
 echo "🔐 Checking root privileges..."
 if [ "$EUID" -ne 0 ]; then
   echo "This script must be run as root."
-  echo "Use: sudo ./main.sh"
+  echo "curl -fsSL https://raw.githubusercontent.com/user14923929/p10k-installer/refs/heads/master/main.sh | sudo bash"
   tfu
   exit 1
 fi
