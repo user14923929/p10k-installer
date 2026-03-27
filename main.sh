@@ -25,7 +25,7 @@ echo "📦 Updating packages..."
 apt update
 
 echo "⚙ Installing zsh, git"
-apt install -y zsh git curl
+apt install -y zsh git
 
 echo "📦 Package versions:"
 zsh --version
