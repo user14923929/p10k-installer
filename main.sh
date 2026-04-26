@@ -76,14 +76,14 @@ echo "🛠 Setting Powerlevel10k theme..."
 sed -i 's/^ZSH_THEME=.*/ZSH_THEME="powerlevel10k\/powerlevel10k"/' "$USER_HOME/.zshrc"
 
 # --------- MesloLGS NF fonts ---------
-echo "🔤 Installing MesloLGS Nerd Fonts..."
-FONT_DIR="$USER_HOME/.local/share/fonts"
-mkdir -p "$FONT_DIR"
-for style in Regular Bold Italic Bold\ Italic; do
-  sudo -u "$TARGET_USER" curl -fLo "$FONT_DIR/MesloLGS NF $style.ttf" \
-    "https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20$style.ttf"
-done
-fc-cache -fv >/dev/null 2>&1
+echo "🔤 Installing MesloLGS Nerd Fonts... [SKIP]"
+# FONT_DIR="$USER_HOME/.local/share/fonts"
+# mkdir -p "$FONT_DIR"
+# for style in Regular Bold Italic Bold\ Italic; do
+#   sudo -u "$TARGET_USER" curl -fLo "$FONT_DIR/MesloLGS NF $style.ttf" \
+#     "https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20$style.ttf"
+# done
+# fc-cache -fv >/dev/null 2>&1
 
 # --------- Set default shell ---------
 echo "🔄 Changing default shell to zsh..."
